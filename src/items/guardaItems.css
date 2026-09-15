@@ -1,0 +1,104 @@
+@media (min-width: 770px) {
+    #center-card {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .conteiner {
+        margin-top: 70px;
+        background-color: white;
+        width: 100%;
+        height: 40vh;
+        padding: 1vh;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 770px) {
+    .center {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .conteiner {
+        margin-top: 90px;
+        background-color: white;
+        width: 100%;
+        height: 30vh;
+        padding: 2vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3px;
+    }
+}
+
+@media (max-width: 600px) {
+    .conteiner {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        height: 100%;
+    }
+
+    .center {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.modalOverlay {
+    top: 34%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 30vh;
+    width: 96%;
+    padding: 10%;
+}
+
+.modalContent {
+    background-color: black;
+    border-radius: 25px;
+    position: fixed;
+    padding: 22px;
+}
+
+.modalTitle {
+    color: rgb(100, 165, 202);
+    font-weight: 900;
+    margin-top: 3px;
+    font-size: 1.9rem;
+}
+
+.modalText {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+}
+
+.btnClose {
+    margin-top: 25px;
+    width: 25vh;
+    height: 5vh;
+    border-radius: 9px;
+    background-color: deepskyblue;
+    color: white;
+}
+
+.btnClose:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 0.8;
+    color: black;
+}

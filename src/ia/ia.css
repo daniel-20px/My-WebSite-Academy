@@ -1,0 +1,151 @@
+#chat-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+
+.chat-input-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+.chat-input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+}
+
+
+.chat-button {
+    padding: 12px 24px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.chat-button:hover {
+    transform: scale(1.06);
+    transition-duration: 0.7s;
+}
+
+.chat-button:disabled {
+    background-color: #93c5fd;
+    cursor: not-allowed;
+}
+
+
+.chat-response-box {
+    background-color: #f3f4f6;
+    padding: 20px;
+    border-radius: 8px;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+.chat-response-box {
+    background-color: #f8fafc;/ border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    color: #334155;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+
+.chat-response-box p {
+    margin-bottom: 14px;
+}
+
+
+.chat-response-box h1,
+.chat-response-box h2,
+.chat-response-box h3 {
+    color: blue;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+
+.chat-response-box strong {
+    color: #0f172a;
+    font-weight: 600;
+}
+
+
+.chat-response-box ul,
+.chat-response-box ol {
+    margin-left: 20px;
+    margin-bottom: 14px;
+}
+
+.chat-response-box li {
+    margin-bottom: 6px;
+}
+
+
+.chat-response-box pre {
+    background-color: #1e1e2e;
+    color: #f8f8f2;
+    padding: 16px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 16px 0;
+}
+
+
+.chat-response-box code {
+    background-color: black;
+    color: rgb(8, 224, 44);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: monospace;
+}
+
+
+.chat-response-box p {
+    margin-bottom: 12px;
+}
+
+.chat-response-box strong {
+    color: #000;
+    font-weight: bold;
+}
+
+.chat-response-box pre {
+    background: black;
+    color: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+.chat-clear-button {
+    padding: 12px 18px;
+    background-color: #ef4444;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all background 0.2s;
+}
+
+.chat-clear-button:hover {
+    background-color: #dc2626;
+    transform: scale(1.06);
+    transition-duration: 0.7s;
+}

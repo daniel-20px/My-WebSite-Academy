@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(222, 227, 236);
+
+}
+
+@media (min-width:770px) {
+    .menuul {
+        background-color: black;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 10%;
+        padding-left: 30%;
+        z-index: 105;
+        overflow: hidden;
+    }
+
+    .a-menu {
+        gap: 150px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 1.1rem;
+        overflow: hidden;
+    }
+
+    .a-menu:hover {
+        transition: all;
+        border-bottom: 3px solid cyan;
+        transition-duration: 0.7s;
+        color: cyan;
+    }
+
+    .btn-hamburger {
+        position: absolute;
+    }
+
+}
+
+@media (max-width: 770px) {
+
+    .navbar {
+        width: 0px;
+        height: 100%;
+        transition-duration: 2s;
+        overflow: hidden;
+        position: absolute;
+        background-color: black;
+    }
+
+    .open {
+        background-color: black;
+        height: 100vh;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        overflow: hidden;
+    }
+
+    .btn-hamburger {
+        width: 60px;
+        background-color: transparent;
+        border: none;
+        height: 45px;
+        padding: 6px;
+        z-index: 1200;
+        margin-right: 7px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        cursor: pointer;
+
+    }
+
+    .btn-hamburger span {
+        height: 4px;
+        background-color: white;
+        width: 90%;
+        color: white;
+        border-radius: 12px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .btn-hamburger.active {
+        transition: 2.3s;
+    }
+
+    .btn-hamburger.active span {
+        width: 100%;
+        height: 5px;
+    }
+
+    .btn-hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translateY(20px);
+    }
+
+    .btn-hamburger.active span:nth-child(2) {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+
+    .btn-hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-20px);
+
+
+    }
+
+    .menu-top {
+        background-color: black;
+        width: 100%;
+        height: 50px;
+        z-index: 1000;
+        display: flex;
+        justify-content: flex-end;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    .a-menu {
+        opacity: 0;
+        color: white;
+        font-size: 0rem;
+
+    }
+
+    li {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        gap: 3px;
+    }
+
+    .opacity {
+        color: rgb(196, 188, 233);
+        font-size: 2.1rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+        opacity: 100%;
+        text-decoration: none;
+        background-color: black;
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .opacity:hover {
+        background-color: blue;
+        transform: scale(1.1);
+        transition: 0.2s all ease-in-out;
+    }
+
+    .paimenu {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menuul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    
+    }
+
+}
