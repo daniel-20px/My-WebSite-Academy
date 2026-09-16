@@ -18,12 +18,12 @@ export function ChatDev() {
     setRespostaIA("");
            try {
       // LINK OFICIAL E DEFINITIVO
-      const response = await fetch("https://onrender.com", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ pergunta: input }), 
+      const response = await fetch("https://my-website-academy.onrender.com/api/devhelp/pergunta", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({ pergunta: input }),
       });
 
       if (!response.ok) {
