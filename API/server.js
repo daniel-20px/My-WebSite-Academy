@@ -1,17 +1,21 @@
 import express from 'express';
-// Caminho ajustado para garantir que o Node encontre o arquivo se este código estiver na raiz
 import perguntarDev from './src/routes/dev.routes.js'; 
-
 import cors from "cors";
 
 const app = express();  
 const PORT = 3001;
 
 app.use(express.json());
-app.use(cors());
+
+// CORREÇÃO CRÚCIAL DE PRODUÇÃO: Libera o acesso total para o seu site do Render não ser bloqueado
+app.use(cors({
+  origin: "*", 
+  methods: ["GET", "POST"],
+  allowedHeaders: ["Content-Type"]
+}));
+
 app.use('/api/devhelp', perguntarDev); 
 
 app.listen(PORT, () => {
     console.log(`Servidor rodando na porta ${PORT}`);
 });
-

@@ -25,35 +25,35 @@ function Items() {
 
                 <Item
                     title="React"
-                    img="/public/logo-react-256.png"
+                    img="/logo-react-256.png"
                     paragrafo="Learn more"
                     onClick={() => setTecnologiaAtiva('React')}
                 />
 
                 <Item
                     title="JavaScript"
-                    img="/public/logo-javascript-256.png"
+                    img="/logo-javascript-256.png"
                     paragrafo="Learn more"
                     onClick={() => setTecnologiaAtiva('JavaScript')}
                 />
 
                 <Item
                     title="TypeScript"
-                    img="/public/typescript-256.png"
+                    img="/typescript-256.png"
                     paragrafo="Learn more"
                     onClick={() => setTecnologiaAtiva('TypeScript')}
                 />
 
                 <Item
                     title="CSS"
-                    img="/public/5b29d22ed1933-5ab8d0f3324cd44fb7cd61f5ac7ab341.png"
+                    img="/5b29d22ed1933-5ab8d0f3324cd44fb7cd61f5ac7ab341.png"
                     paragrafo="Learn more"
                     onClick={() => setTecnologiaAtiva('CSS')}
                 />
 
                 <Item
                     title="HTML"
-                    img="/public/web-development-html-logo-world-wide-web-consortium-create-html-signature-64bbcda93e8a4a2805240f4c06c8870d.png"
+                    img="/web-development-html-logo-world-wide-web-consortium-create-html-signature-64bbcda93e8a4a2805240f4c06c8870d.png"
                     paragrafo="Learn more"
                     onClick={() => setTecnologiaAtiva('HTML')}
                 />
