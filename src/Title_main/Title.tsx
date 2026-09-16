@@ -6,7 +6,7 @@ const Title = () => {
 
 
     return (<div>
-        <h1 className='title' id="title-main">Central of the Develop</h1>
+              <h1 id='title-main'>Central de Desenvolvimento</h1>
         <div className='alert'>
             <p className='explicativo'>abaixo alguns conceitos basicos</p>
         </div>

@@ -14,7 +14,7 @@ const Item = ({ title, paragrafo, img, onClick }: CardItemProps) => {
       <img className='img' src={img} alt={title} />
       <p className='paragrafo'>{paragrafo}</p>
 
-      <button className='btn' onClick={onClick}>view</button>
+      <button className='btn' onClick={onClick}>Visualizar</button>
     </div>
   );
 }

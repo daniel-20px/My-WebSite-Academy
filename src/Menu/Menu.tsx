@@ -33,10 +33,10 @@ function Menu_responsivo() {
 
             <nav className={`navbar ${navopen ? 'open' : ''}`}>
                 <ul className='menuul'>
-                    <li><a className={`a-menu ${navopen ? 'opacity' : ''}`} href='#'>Home</a></li>
-                    <li><a className={`a-menu ${navopen ? 'opacity' : ''}`} href='#'>services</a></li>
-                    <li><a className={`a-menu ${navopen ? 'opacity' : ''}`} href='#'>about</a></li>
-                    <li><a className={`a-menu ${navopen ? 'opacity' : ''}`} href='#'>contacts</a></li>
+                    <li><a className={`a-menu ${navopen ? 'opacity' : ''}`} href='#'>Início</a></li>
+                    <li><a className={`a-menu ${navopen ? 'opacity' : ''}`} href='#'>Serviços</a></li>
+                    <li><a className={`a-menu ${navopen ? 'opacity' : ''}`} href='#'>Ajuda</a></li>
+                    <li><a className={`a-menu ${navopen ? 'opacity' : ''}`} href='#'>Atendimento</a></li>
                 </ul>
             </nav>
         </div>
