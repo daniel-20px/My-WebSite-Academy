@@ -7,7 +7,7 @@ const PORT = 3001;
 
 app.use(express.json());
 
-// CORREÇÃO CRÚCIAL DE PRODUÇÃO: Libera o acesso total para o seu site do Render não ser bloqueado
+
 app.use(cors({
   origin: "*", 
   methods: ["GET", "POST"],

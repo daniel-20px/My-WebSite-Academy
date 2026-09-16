@@ -16,20 +16,20 @@ export function ChatDev() {
 
     setCarregando(true);
     setRespostaIA("");
-
-    try {
-      const response = await fetch("https://my-website-academy.onrender.com", {
+           try {
+      // LINK OFICIAL E DEFINITIVO
+      const response = await fetch("https://onrender.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ pergunta: input }),
+        body: JSON.stringify({ pergunta: input }), 
       });
 
       if (!response.ok) {
         throw new Error("Erro ao buscar dados do servidor");
       }
-
+    
       const data: RespostaBackend = await response.json();
       setRespostaIA(data.resposta);
       setInput("");
