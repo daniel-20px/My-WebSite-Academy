@@ -18,7 +18,7 @@ export function ChatDev() {
     setRespostaIA("");
 
     try {
-      const response = await fetch("http://localhost:3001/api/devhelp/pergunta", {
+      const response = await fetch("https://my-website-academy.onrender.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
