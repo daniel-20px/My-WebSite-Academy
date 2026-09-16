@@ -54,15 +54,15 @@
 }
 
 .chat-response-box {
-    background-color: #f8fafc;/ border: 1px solid #e2e8f0;
-    border-radius: 12px;
-    padding: 20px;
-    color: #334155;
-    font-size: 15px;
-    line-height: 1.6;
-    margin-top: 15px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  color: #334155;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-top: 15px;
 }
-
 
 .chat-response-box p {
     margin-bottom: 14px;
